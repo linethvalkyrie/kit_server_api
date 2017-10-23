@@ -66,7 +66,7 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>null, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
@@ -101,7 +101,7 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>null, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
@@ -124,7 +124,7 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>null, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
