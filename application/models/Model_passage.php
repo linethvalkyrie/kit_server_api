@@ -9,7 +9,7 @@ class Model_Passage extends CI_Model {
     
     public function getPassage()
   	{
-  		$result = $this->db->get(db_cons::tbl_passage_detail,'tbl_passage_detail');
+  		$result = $this->db->get('tbl_passage_detail','tbl_passage_detail');
   		
   		return $result->result_array();
   	}
@@ -17,7 +17,7 @@ class Model_Passage extends CI_Model {
     public function addPassage($data) {
         $this->db->trans_start();
 
-        $this->db->insert(Db_Cons::'tbl_passage_detail',$data);
+        $this->db->insert('tbl_passage_detail',$data);
         
         $this->db->trans_complete();
 
