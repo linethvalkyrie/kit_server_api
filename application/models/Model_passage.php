@@ -44,7 +44,7 @@ class Model_Passage extends CI_Model {
 
         $this->db->trans_start();
 
-        $sql = "UPDATE tbl_passage_detail SET 'passage_title'=$passage_title, 'passage_message'=$passage_message, 'passage_author'=$passage_author, 'passage_category'=$passage_category WHERE 'passage_id'=$passage_id";
+        $sql = "UPDATE tbl_passage_detail SET passage_title='$passage_title', passage_message='$passage_message', passage_author='$passage_author', passage_category='$passage_category' WHERE passage_id='$passage_id'";
 
         $this->db->query($sql);
         
@@ -69,7 +69,7 @@ class Model_Passage extends CI_Model {
 
         $this->db->trans_start();
 
-        $sql = "DELETE FROM tbl_passage_detail WHERE 'passage_id'=$passage_id";
+        $sql = "DELETE FROM tbl_passage_detail WHERE passage_id=$passage_id";
 
         $this->db->query($sql);
         
