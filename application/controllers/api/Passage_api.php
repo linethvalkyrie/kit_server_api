@@ -34,11 +34,11 @@ class Passage_api extends REST_Controller {
 
         if ($result_passage!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result_passage->result_array(), 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>$result_passage, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
-            $response = array('data'=>$result_passage->result_array(), 'error_code'=>'500', 'message'=>$message);
+            $response = array('data'=>$result_passage, 'error_code'=>'500', 'message'=>$message);
         }
 
         return $this->res_result($response);
@@ -66,11 +66,11 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'500', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'500', 'message'=>$message);
         }
 
         return $this->res_result($response);
@@ -101,11 +101,11 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'500', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'500', 'message'=>$message);
         }
 
         return $this->res_result($response);
@@ -124,11 +124,11 @@ class Passage_api extends REST_Controller {
 
         if ($result!=FALSE) {
             $message = "Success";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'0', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'0', 'message'=>$message);
         }
         else {
             $message = "Failed";
-            $response = array('data'=>$result->result_array(), 'error_code'=>'500', 'message'=>$message);
+            $response = array('data'=>$result, 'error_code'=>'500', 'message'=>$message);
         }
 
         return $this->res_result($response);
